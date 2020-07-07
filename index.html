@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="description" content="Maks Belenko Portfolio" />
+    <meta name="keywords" content="C#,iOS,Apps,Developer,Software">
+    <meta name="author" content="Maks Belenko" />
+    <title>Maks Belenko</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/font-faces.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+
+    <!--Main menu-->
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="menu__wrapper d-none d-lg-block col-md-12">
+                    <nav class="">
+                        <ul>
+                            <li><a href="#hello">About_me</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu__wrapper col-md-12 d-lg-none">
+                    <button type="button" class="menu__mobile-button">
+                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main menu-->
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu d-lg-none">
+        <div class="container">
+            <div class="mobile-menu__close">
+                <span><i class="fa fa-close" aria-hidden="true"></i></span>
+            </div>
+            <nav class="mobile-menu__wrapper">
+                <ul>
+                    <li><a href="#hello">About_Me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+
+    <!--Header-->
+    <header class="main-header" style="background-image: url(images/MaksBelenko4.jpg)">
+        <div class="container">
+            <div class="row personal-profile">
+                <div class="col-md-4 personal-profile__avatar">
+                    <img class="" src="images/MaksBelenko3.jpg" alt="avatar">
+                </div>
+                <div class="col-md-8">
+                    <p class="personal-profile__name">Maks Belenko_</p>
+                    <p class="personal-profile__work">Software engineer</p>
+                    <div class="personal-profile__contacts">
+                        <dl class="contact-list contact-list__opacity-titles">
+                            <dt>GitHub:</dt>
+                            <dd><a href="https://github.com/MaksBelenko" target="_blank">MaksBelenko</a></dd>
+                            <dt>LinkedIn:</dt>
+                            <dd><a href="https://www.linkedin.com/in/maksim-belenko/" target="_blank">Maksim Belenko</a>
+                            </dd>
+                            <!-- <dt>Phone:</dt>
+                            <dd><a href="tel:+44123456789">+44 123456789</a></dd> -->
+                            <dt>Email:</dt>
+                            <dd><a href="mailto:maksim.belenko@gmail.com">maksim.belenko@gmail.com</a></dd>
+                            <dt>Location:</dt>
+                            <dd>Manchester, UK</dd>
+                        </dl>
+                    </div>
+                    <p class="personal-profile__social">
+                        <a href="https://github.com/MaksBelenko" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/maksim-belenko/" target="_blank"><i
+                                class="fa fa-linkedin-square"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header-->
+
+    <!--Hello-->
+    <section id="hello" class="container section">
+        <div class="row">
+            <div class="col-md-10">
+                <h2 id="hello_header" class="section__title" style="text-indent: 0px;">AboutMe_</h2>
+                <p class="section__description">
+                    I am an open minded, knowledge seeking and fast learning developer. I have a good understanding
+                    of agile methodologies which I developed whilst working on projects of all scales: Crossrail in Siemens,
+                    Amazon Dublin and Disney Cruises as well as small personal projects. Skilled at writing well-designed, 
+                    testable and effiecient code and applying current best practices.
+                </p>
+                <a href="#" class="section_btn site-btn"><span><i class="fa fa-download"
+                            aria-hidden="true"></i></span>Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!--Hello-->
+
+    <hr>
+
+    <!--Portfolio-->
+    <section id="portfolio" class="container section">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 id="portfolio_header" class="section__title" style="text-indent: -9999px;">Projects_</h2>
+            </div>
+        </div>
+        <div class="row portfolio-menu">
+            <div class="col-md-12">
+                <nav>
+                    <ul>
+                        <li><a href="#" data-portfolio-target-tag="all">all</a></li>
+                        <li><a href="#" data-portfolio-target-tag="iOS Apps">iOS Apps</a></li>
+                        <li><a href="#" data-portfolio-target-tag="C# Projects">C# Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="portfolio-cards">
+
+            <!-- iOS Apps -->
+            <div class="row project-card" data-toggle="modal" data-target="#WorkReceipts" data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/WorkReceipts.jpg" alt="project-img">
+                </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">WorkReceipts App</h3>
+                    <p class="project-card__description">
+                        Having to travel quite a bit for my work, I have to claim expenses every week. Monitoring 
+                        all of these can be challenging as some receipts may get lost or forgotten
+                        to be claimed back. This is what led me to create this app. It allows you to quickly 
+                        take a picture and track all receipts
+                        with the useful indicators. Furthermore, you can send all photos, Zip photos archive or PDF
+                        statement with the relative information, tables and photos.
+                    </p>
+                    <p class="project-card__stack">Used stack:</p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>CoreData</li>
+                        <li>PDFKit</li>
+                    </ul>
+                    <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github: ReceiptsSorted</a>
+                </div>
+            </div>
+
+            <div class="row project-card" data-toggle="modal" data-target="#DeliVeri"
+                data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">DeliVeri</h3>
+                    <p class="project-card__description">
+                        I came accross Vapor and decided to create a backend, front-end and an app using only Swift.
+                        This project is a simple ordering service. As a test hosting I decided to use my
+                        <i>Raspberry Pi 4</i> with Ubuntu 18.04.4 since this OS is officially supported.
+                    </p>
+                    <p class="project-card__stack">Used stack:</p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>Vapor</li>
+                        <li>Fluent</li>
+                        <li>SQLite</li>
+                        <li>Leaf</li>
+                        <li>No-IP DDNS</li>
+                    </ul>
+                    <a href="https://github.com/MaksBelenko/DeliVeri-Vapor" class="project-card__link">Github: DeliVeri</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/DeliVeriFlat.jpg" alt="project-img">
+                </div>
+            </div>
+
+            <div class="row project-card" data-toggle="modal" data-target="#SimplePDFBuilder"
+                data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/SimplePDFBuilder.jpg" alt="project-img">
+                </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">SimplePDFBuilder Framework</h3>
+                    <p class="project-card__description">
+                        Working with PDF creation in other apps I decided it will be a great idea to create an
+                        open-source framework where creating custom PDF will be a matter of a few lines of code. This will allow people to
+                        spend time on more valuable things in their apps rather than having to draw squares pixel by pixel. This framework
+                        allows developers to create PDFs with highly customisable elements such as text, image, footers, headers and even
+                        flexible tables.
+                    </p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>Cocoapods</li>
+                        <li>Carthage</li>
+                        <li>SPM</li>
+                    </ul>
+                    <a href="https://github.com/MaksBelenko/SimplePDFBuilder" class="project-card__link">Github: SimplePDFBuilder</a>
+                </div>
+            </div>
+
+            <div class="row project-card" data-toggle="modal" data-target="#UberClone"
+                data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Uber Clone</h3>
+                    <p class="project-card__description">
+                        This project started as an experiment using Firebase. The idea was simple: create an uber clone
+                        with authentication and separate functionality for a passenger and a driver. For the maps and places I
+                        decided to go with Apple's MapKit as I had already tried Google maps and places in my other projects.
+                    </p>
+                    <p class="project-card__stack">Used stack:</p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>MapKit</li>
+                        <li>Firebase</li>
+                        <li>Firebase Authentification</li>
+                    </ul>
+                    <a href="https://github.com/MaksBelenko/UberClone" class="project-card__link">Github: UberClone</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/UberClone.jpg" alt="project-img">
+                </div>
+            </div>
+
+            <div class="row project-card" data-toggle="modal" data-target="#WorkReceipts"
+                data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/Onboarding.jpg" alt="project-img">
+                </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">Onboarding for WorkReceipts App</h3>
+                    <p class="project-card__description">
+                        This was created as a part of WorkReceipts app. The idea was to create custom Onboarding
+                        which is not similar to the mainstream ones: swipable card or similar. This onboarding
+                        points to the objects with appropriate description. Moreover, onboarding continues when the
+                        user adds its first receipt by showing a swipe functionality for the element in table view.
+                        In order to show them only single time 2 user defaults are used.
+                    </p>
+                    <p class="project-card__stack">Used stack:</p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>UserDefaults</li>
+                    </ul>
+                    <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github: ReceiptsSorted</a>
+                </div>
+            </div>
+
+
+            <!-- C# Projects -->
+            <div class="row project-card" data-toggle="modal" data-target="#portfolioModal"
+                data-portfolio-tag="C# Projects">
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="images/Crossrail.jpg" alt="project-img">
+                </div>
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">C# Drivers for Crossrail</h3>
+                    <p class="project-card__description">
+                        As my current position as a C# Developer at Siemens Mobility, I'm responsible for providing a CCTV, 
+                        Telephony and Intruder scanners information and functionality to the SCADA package. Thus, 
+                        enabling recordings and automatic switching, help points and intruder detection alarms. This 
+                        functionality is enabled for every single statition on Elizabeth line.
+                    </p>
+                    <p class="project-card__stack">Used stack:</p>
+                    <ul class="tags">
+                        <li>C#</li>
+                        <li>Verint SDK</li>
+                        <li>NICE SDK</li>
+                        <li>Cisco Driver</li>
+                    </ul>
+                    <a href="https://www.crossrail.co.uk/" class="project-card__link">www.crossrail.co.uk</a>
+                </div>
+            </div>
+
+            <div class="row project-card" data-toggle="modal" data-target="#portfolioModal"
+                data-portfolio-tag="C# Projects">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">OPCUA with Hololens 2.0</h3>
+                    <p class="project-card__description">
+                        After the release of Hololens 2.0 there was a great interest in the use of this technology within the automation 
+                        sector. This purpose of this project was to create a Unity model with OPCUA functionality. After I wrote 
+                        a C# driver for the OPCUA, the functionality was planned to be integrated into Unity/Hololens itself. 
+                        However, due to the limitations of Hololens I decided to use ASP.NET Core WebAPI and make hololens just 
+                        to make requests to it. 
+                    </p>
+                    <p class="project-card__stack">Used stack:</p>
+                    <ul class="tags">
+                        <li>Unity</li>
+                        <li>ASP.NET Core</li>
+                        <li>WPF</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="images/Hololens.jpg" alt="project-img">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Portfolio-->
+
+    <hr>
+
+    <!--Resume-->
+    <section id="resume" class="container section">
+        <div class="row">
+            <div class="col-md-10">
+                <h2 id="resume_header" class="section__title" style="text-indent: -9999px;">Resume_</h2>
+                <p class="section__description">
+                    Throughout my career I had a chance to work in different areas. I worked not
+                    only as an engineer and programmer but also as an analyst and a student ambassador.
+                    This section contains my employment history as well as education timeline.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 section__resume resume-list">
+                <h3 class="resume-list_title">employment</h3>
+
+                <!-- Siemens -->
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">SIEMENS</p>
+                    <p class="resume-list__block-date">Jul 2019 - Current</p>
+                    <p> C# development, CROSSRAIL Project </p>
+                    <p> - CCTV driver for SCADA for Verint & NICE</p>
+                    <p> - Cisco Telephony driver</p>
+                    <p> - Redwall Intruder detection driver</p>
+                </div>
+
+                <!-- BSQuare Controls Ltd. -->
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">BSQuare Controls Ltd.</p>
+                    <p class="resume-list__block-date">Jul 2019 - Current</p>
+                    <p> C# drivers creation, Hololens 2 and SCADA development </p>
+                </div>
+
+                <!-- Into Manchester -->
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">INTO Manchester</p>
+                    <p class="resume-list__block-date">Sep 2017 -  Aug 2019</p>
+                    <p> Residential Ambassador </p>
+                </div>
+
+                <!-- UoM -->
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">The University of Manchester</p>
+                    <p class="resume-list__block-date">Jun 2017 - Sep 2017; Jun 2018 - Sep 2018</p>
+                    <p> Intern on 2 summer placements working on Digital Signal Processing using Fortran, OpenMP, MPI
+                        and Web </p>
+                </div>
+
+                <!-- SPBEC -->
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">SPBEC (Saint-Petersburg Electrotechnical Company)</p>
+                    <p class="resume-list__block-date">Dec 2016 - Jan 2017</p>
+                    <p> Automation Engineer </p>
+                </div>
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">SPBEC (Saint-Petersburg Electrotechnical Company)</p>
+                    <p class="resume-list__block-date">Jun 2016 - Sep 2016</p>
+                    <p> Automation Engineer </p>
+                </div>
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">SPBEC (Saint-Petersburg Electrotechnical Company)</p>
+                    <p class="resume-list__block-date">Jun 2015 - Sep 2015</p>
+                    <p> Automation Analyst </p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 section__resume resume-list">
+                <h3 class="resume-list_title">
+                    Education
+                </h3>
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">The University of Manchester</p>
+                    <p class="resume-list__block-date">2016 - 2019</p>
+                    <p>BEng (Hons) Electrical and Electronics Engineering</p>
+                    <p>Grade: First Class (82%)</p>
+                </div>
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">INTO Manchester</p>
+                    <p class="resume-list__block-date">2015 - 2016</p>
+                    <p>
+                        Science and Engineering Foundation
+                    </p>
+                </div>
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">PFML Nº239 School</p>
+                    <p class="resume-list__block-date">2013 - 2015</p>
+                    <p>
+                        Science
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!--Resume-->
+
+
+    <!-- Footer -->
+    <div class="background">
+        <div class="section">
+            <div class="footer">
+                <p>Maks Belenko</p>
+                <p class="personal-profile__social">
+                    <a href="https://github.com/MaksBelenko" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/maksim-belenko/" target="_blank"><i
+                            class="fa fa-linkedin-square"></i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Portfolio Modal -->
+    <div class="modal fade portfolio-modal" id="WorkReceipts" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+                    <p class="portfolio-modal__title">WorkReceipts App</p>
+                    <img class="portfolio-modal__img" src="images/WorkReceipts.jpg" alt="modal_img">
+                    <p class="portfolio-modal__description">
+                        Having to travel quite a bit for my work, I have to claim expenses every week. Monitoring 
+                        all of these can be challenging as some receipts may get lost or forgotten
+                        to be claimed back. This is what led me to create this app. It allows you to quickly 
+                        take a picture and track all receipts
+                        with the useful indicators. Furthermore, you can send all photos, Zip photos archive or PDF
+                        statement with the relative information, tables and photos. This app was designed with simplicity 
+                        in mind. It intentionally was designed to have a very few view controllers meaning that they 
+                        are responsible not only for one task.
+                    </p>
+                    <div class="portfolio-modal__link">
+                        <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github: ReceiptsSorted</a>
+                    </div>
+                    <div class="portfolio-modal__stack">
+                        <p class="portfolio-modal__stack-title">Using stack:</p>
+                        <ul class="tags">
+                            <li>Swift</li>
+                            <li>CoreData</li>
+                            <li>PDFKit</li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade portfolio-modal" id="DeliVeri" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+                    <p class="portfolio-modal__title">DeliVeri</p>
+                    <img class="portfolio-modal__img" src="images/DeliVeri.jpg" alt="modal_img">
+                    <p class="portfolio-modal__description">
+                        I came accross Vapor and decided to create a backend, front-end and an app using only Swift.
+                        This project is a simple ordering service. As a test hosting I decided to use my
+                        <i>Raspberry Pi 4</i> with Ubuntu 18.04.4 since this OS is officially supported.
+                    </p>
+                    <div class="portfolio-modal__link">
+                        <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github: ReceiptsSorted</a>
+                    </div>
+                    <div class="portfolio-modal__stack">
+                        <p class="portfolio-modal__stack-title">Using stack:</p>
+                        <ul class="tags">
+                            <li>Swift</li>
+                            <li>Vapor</li>
+                            <li>Fluent</li>
+                            <li>SQLite</li>
+                            <li>Leaf</li>
+                            <li>No-IP DDNS</li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade portfolio-modal" id="SimplePDFBuilder" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+                    <p class="portfolio-modal__title">SimplePDFBuilder</p>
+                    <img class="portfolio-modal__img" src="images/SimplePDFBuilder.jpg" alt="modal_img">
+                    <p class="portfolio-modal__description">
+                        Working with PDF creation in other apps I decided it will be a great idea to create an
+                        open-source framework where creating custom PDF will be a matter of a few lines of code. This will allow people to
+                        spend time on more valuable things in their apps rather than having to draw squares pixel by pixel. This framework
+                        allows developers to create PDFs with highly customisable elements such as text, image, footers, headers and even
+                        flexible tables.
+                    </p>
+                    <div class="portfolio-modal__link">
+                        <a href="https://github.com/MaksBelenko/SimplePDFBuilder" class="project-card__link">Github: SimplePDFBuilder</a>
+                    </div>
+                    <div class="portfolio-modal__stack">
+                        <p class="portfolio-modal__stack-title">Using stack:</p>
+                        <ul class="tags">
+                            <li>Swift</li>
+                            <li>Cocoapods</li>
+                            <li>Carthage</li>
+                            <li>SPM</li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade portfolio-modal" id="UberClone" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+                    <p class="portfolio-modal__title">Uber Clone</p>
+                    <img class="portfolio-modal__img" src="images/UberClone.jpg" alt="modal_img">
+                    <p class="portfolio-modal__description">
+                        This project started as an experiment using Firebase. The idea was simple: create an uber clone
+                        with authentication and separate functionality for a passenger and a driver. For the maps and places I
+                        decided to go with Apple's MapKit as I had already tried Google maps and places in my other projects.
+                    </p>
+                    <div class="portfolio-modal__link">
+                        <a href="https://github.com/MaksBelenko/UberClone" class="project-card__link">Github: UberClone</a>
+                    <div class="portfolio-modal__stack">
+                        <p class="portfolio-modal__stack-title">Using stack:</p>
+                        <ul class="tags">
+                            <li>Swift</li>
+                            <li>MapKit</li>
+                            <li>Firebase</li>
+                            <li>Authentification</li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+
+
+    <script src="js/min/jquery.waypoints.min.js"></script>
+    <script src="js/min/mbclicker.min.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/section.js"></script>
+    <script src="js/portfolio-filter.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/site-btn.js"></script>
+
+</body>
+
+</html>
