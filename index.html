@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <meta name="description" content="Maks Belenko Portfolio" />
-    <meta name="keywords" content="C#,iOS,Apps,Developer,Software">
+    <meta name="keywords" content="C#,iOS,Apps,Developer,Software,Maksim,Max,Belenko">
     <meta name="author" content="Maks Belenko" />
     <title>Maks Belenko</title>
 
@@ -134,7 +134,7 @@
     <section id="portfolio" class="container section">
         <div class="row">
             <div class="col-md-12">
-                <h2 id="portfolio_header" class="section__title" style="text-indent: -9999px;">Projects_</h2>
+                <h2 id="portfolio_header" class="section__title" style="text-indent: -9999px;">Personal Projects_</h2>
             </div>
         </div>
         <div class="row portfolio-menu">
@@ -158,8 +158,10 @@
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">Energy Fitness</h3>
                     <p class="project-card__description">
-                        As a single developer I have created gym management system with iOS app. As the backend I have used NestJs and hosting it on AWS
-
+                        As a single developer I have created gym management system. The backend (REST API) is written using NestJs which was designed with the built-in Dependency Injection and MVC which Express did not have out of the box. I have built a full authentication
+                        service to enable custom signups and logins which allowed to have a seamless experience for customers as well as making sure the data is not being leaked to third party services. Additionally, using AWS' SES (email service) I have
+                        created a custom flow for two-factor authentication. For the iOS part of the project, I decided to use combination of Swift with Combine (Apple's reactive framework). That allowed me to create code without Pyramids of Doom along
+                        the way. All of the iOS app is built according to MVVM pattern.
                     </p>
                     <p class="project-card__stack">Used stack:</p>
                     <ul class="tags">
@@ -349,10 +351,18 @@
             <div class="col-md-8 section__resume resume-list">
                 <h3 class="resume-list_title">employment</h3>
 
+                <!-- Interact Software -->
+                <div class="resume-list__block">
+                    <p class="resume-list__block-title">Interact Software</p>
+                    <p class="resume-list__block-date">Jul 2021 - Current</p>
+                    <p> iOS Developer </p>
+                    <p> Developing corporate social app large enterprises</p>
+                </div>
+
                 <!-- Siemens -->
                 <div class="resume-list__block">
                     <p class="resume-list__block-title">SIEMENS</p>
-                    <p class="resume-list__block-date">Jul 2019 - Current</p>
+                    <p class="resume-list__block-date">Jul 2019 - JuL 2021</p>
                     <p> C# development, CROSSRAIL Project </p>
                     <p> - CCTV driver for SCADA for Verint & NICE</p>
                     <p> - Cisco Telephony driver</p>
@@ -362,7 +372,7 @@
                 <!-- BSQuare Controls Ltd. -->
                 <div class="resume-list__block">
                     <p class="resume-list__block-title">BSQuare Controls Ltd.</p>
-                    <p class="resume-list__block-date">Jul 2019 - Current</p>
+                    <p class="resume-list__block-date">Jul 2019 - Jun 2021</p>
                     <p> C# drivers creation, Hololens 2 and SCADA development </p>
                 </div>
 
@@ -471,9 +481,10 @@
                     <p class="portfolio-modal__title">Energy Fitness</p>
                     <img class="portfolio-modal__img" src="images/Energy.png" alt="modal_img">
                     <p class="portfolio-modal__description">
-                        Having to travel quite a bit for my work, I have to claim expenses every week. Monitoring all of these can be challenging as some receipts may get lost or forgotten to be claimed back. This is what led me to create this app. It allows you to quickly take
-                        a picture and track all receipts with the useful indicators. Furthermore, you can send all photos, Zip photos archive or PDF statement with the relative information, tables and photos. This app was designed with simplicity in mind.
-                        It intentionally was designed to have a very few view controllers meaning that they are responsible not only for one task.
+                        As a single developer I have created gym management system. The backend (REST API) is written using NestJs which was designed with the built-in Dependency Injection and MVC which Express did not have out of the box. I have built a full authentication
+                        service to enable custom signups and logins which allowed to have a seamless experience for customers as well as making sure the data is not being leaked to third party services. Additionally, using AWS' SES (email service) I have
+                        created a custom flow for two-factor authentication. For the iOS part of the project, I decided to use combination of Swift with Combine (Apple's reactive framework). That allowed me to create code without Pyramids of Doom along
+                        the way. All of the iOS app is built according to MVVM pattern.
                     </p>
                     <div class="portfolio-modal__link">
                         <a href="https://github.com/MaksBelenko/energy-fitness-iOS" class="project-card__link">
