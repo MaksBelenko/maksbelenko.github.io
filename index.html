@@ -21,6 +21,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Github calendar -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
 </head>
 
 
@@ -59,8 +63,8 @@
             <nav class="mobile-menu__wrapper">
                 <ul>
                     <li><a href="#hello">About_Me</a></li>
-                    <li><a href="#resume">Resume</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
                 </ul>
             </nav>
         </div>
@@ -109,16 +113,20 @@
             <div class="col-md-10">
                 <h2 id="hello_header" class="section__title" style="text-indent: 0px;">AboutMe_</h2>
                 <p class="section__description">
-                    I am an open minded, knowledge seeking and fast learning developer. I have a good understanding
-                    of agile methodologies which I developed whilst working on projects of all scales: Crossrail in Siemens,
-                    Amazon Dublin and Disney Cruises as well as small personal projects. Skilled at writing well-designed, 
-                    testable and effiecient code and applying current best practices.
+                    I am an open minded, knowledge seeking and fast learning developer. I have a good understanding of agile methodologies which I developed whilst working on projects of all scales: Crossrail in Siemens, Amazon Dublin and Disney Cruises as well as small
+                    personal projects. Skilled at writing well-designed, testable and efficient code and applying current best practices.
                 </p>
-                <a href="files/MBelenko_CV.pdf" target="_blank" class="section_btn site-btn"><span><i class="fa fa-download" aria-hidden="true"></i></span>Download CV</a>
+                <a href="files/MBelenko_CV.pdf" target="_blank" class="section_btn site-btn"><span><i
+                            class="fa fa-download" aria-hidden="true"></i></span>Download CV</a>
+                <!-- <div class="calendar" style="margin-top: 30px"></div>
+            </div> -->
+                <!-- Github contributions -->
+                <br />
             </div>
-        </div>
+            <!-- <p style="text-align: center;">(Only my personal projects contributions are shown)</p> -->
     </section>
     <!--Hello-->
+
 
     <hr>
 
@@ -143,21 +151,39 @@
         <div class="portfolio-cards">
 
             <!-- iOS Apps -->
-            <div class="row project-card" data-toggle="modal" data-target="#WorkReceipts" data-portfolio-tag="iOS Apps">
+            <div class="row project-card" data-toggle="modal" data-target="#EnergyFitness" data-portfolio-tag="iOS Apps">
                 <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="./images/WorkReceipts.jpg" alt="project-img">
+                    <img class="" src="./images/Energy.png" alt="project-img">
                 </div>
                 <div class="col-md-6 col-lg-7 project-card__info">
-                    <h3 class="project-card__title">WorkReceipts
-                        (<a href="https://apps.apple.com/gb/app/workreceipts/id1527022678" class="project-card__link2">App Store</a>)
+                    <h3 class="project-card__title">Energy Fitness</h3>
+                    <p class="project-card__description">
+                        As a single developer I have created gym management system with iOS app. As the backend I have used NestJs and hosting it on AWS
+
+                    </p>
+                    <p class="project-card__stack">Used stack:</p>
+                    <ul class="tags">
+                        <li>Swift</li>
+                        <li>Combine</li>
+                        <li>NestJs</li>
+                        <li>AWS</li>
+                        <li>PostresQL</li>
+                        <li>S3</li>
+                    </ul>
+                    <a href="https://github.com/MaksBelenko/energy-fitness-iOS" class="project-card__link">
+                        iOS Source Code</a>
+                    <a href="https://github.com/MaksBelenko/gym-management-NestJs" class="project-card__link">
+                        NestJs Backend Source |</a>
+                </div>
+            </div>
+
+            <div class="row project-card" data-toggle="modal" data-target="#WorkReceipts" data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-7 project-card__info">
+                    <h3 class="project-card__title">WorkReceipts (<a href="https://apps.apple.com/gb/app/workreceipts/id1527022678" class="project-card__link2">App Store</a>)
                     </h3>
                     <p class="project-card__description">
-                        Having to travel quite a bit for my work, I have to claim expenses every week. Monitoring 
-                        all of these can be challenging as some receipts may get lost or forgotten
-                        to be claimed back. This is what led me to create this app. It allows you to quickly 
-                        take a picture and track all receipts
-                        with the useful indicators. Furthermore, you can send all photos, Zip photos archive or PDF
-                        statement with the relative information, tables and photos.
+                        Having to travel quite a bit for my work, I have to claim expenses every week. Monitoring all of these can be challenging as some receipts may get lost or forgotten to be claimed back. This is what led me to create this app. It allows you to quickly take
+                        a picture and track all receipts with the useful indicators. Furthermore, you can send all photos, Zip photos archive or PDF statement with the relative information, tables and photos.
                     </p>
                     <p class="project-card__stack">Used stack:</p>
                     <ul class="tags">
@@ -165,17 +191,22 @@
                         <li>CoreData</li>
                         <li>PDFKit</li>
                     </ul>
-                    <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github: ReceiptsSorted</a>
+                    <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">
+                        Github: ReceiptsSorted</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/WorkReceipts.jpg" alt="project-img">
                 </div>
             </div>
 
-            <div class="row project-card" data-toggle="modal" data-target="#DeliVeri"
-                data-portfolio-tag="iOS Apps">
+            <div class="row project-card" data-toggle="modal" data-target="#DeliVeri" data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/DeliVeriFlat.jpg" alt="project-img">
+                </div>
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">DeliVeri</h3>
                     <p class="project-card__description">
-                        I came accross Vapor and decided to create a backend, front-end and an app using only Swift.
-                        This project is a simple ordering service. As a test hosting I decided to use my
+                        I came across Vapor and decided to create a backend, front-end and an app using only Swift. This project is a simple ordering service. As a test hosting I decided to use my
                         <i>Raspberry Pi 4</i> with Ubuntu 18.04.4 since this OS is officially supported.
                     </p>
                     <p class="project-card__stack">Used stack:</p>
@@ -187,26 +218,17 @@
                         <li>Leaf</li>
                         <li>No-IP DDNS</li>
                     </ul>
-                    <a href="https://github.com/MaksBelenko/DeliVeri-Vapor" class="project-card__link">Github: DeliVeri</a>
-                </div>
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="./images/DeliVeriFlat.jpg" alt="project-img">
+                    <a href="https://github.com/MaksBelenko/DeliVeri-Vapor" class="project-card__link">Github:
+                        DeliVeri</a>
                 </div>
             </div>
 
-            <div class="row project-card" data-toggle="modal" data-target="#SimplePDFBuilder"
-                data-portfolio-tag="iOS Apps">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="./images/SimplePDFBuilder.jpg" alt="project-img">
-                </div>
+            <div class="row project-card" data-toggle="modal" data-target="#SimplePDFBuilder" data-portfolio-tag="iOS Apps">
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">SimplePDFBuilder Framework</h3>
                     <p class="project-card__description">
-                        Working with PDF creation in other apps I decided it will be a great idea to create an
-                        open-source framework where creating custom PDF will be a matter of a few lines of code. This will allow people to
-                        spend time on more valuable things in their apps rather than having to draw squares pixel by pixel. This framework
-                        allows developers to create PDFs with highly customisable elements such as text, image, footers, headers and even
-                        flexible tables.
+                        Working with PDF creation in other apps I decided it will be a great idea to create an open-source framework where creating custom PDF will be a matter of a few lines of code. This will allow people to spend time on more valuable things in their apps
+                        rather than having to draw squares pixel by pixel. This framework allows developers to create PDFs with highly customisable elements such as text, image, footers, headers and even flexible tables.
                     </p>
                     <ul class="tags">
                         <li>Swift</li>
@@ -214,18 +236,23 @@
                         <li>Carthage</li>
                         <li>SPM</li>
                     </ul>
-                    <a href="https://github.com/MaksBelenko/SimplePDFBuilder" class="project-card__link">Github: SimplePDFBuilder</a>
+                    <a href="https://github.com/MaksBelenko/SimplePDFBuilder" class="project-card__link">Github:
+                        SimplePDFBuilder</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/SimplePDFBuilder.jpg" alt="project-img">
                 </div>
             </div>
 
-            <div class="row project-card" data-toggle="modal" data-target="#UberClone"
-                data-portfolio-tag="iOS Apps">
+            <div class="row project-card" data-toggle="modal" data-target="#UberClone" data-portfolio-tag="iOS Apps">
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/UberClone.jpg" alt="project-img">
+                </div>
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">Uber Clone</h3>
                     <p class="project-card__description">
-                        This project started as an experiment using Firebase. The idea was simple: create an uber clone
-                        with authentication and separate functionality for a passenger and a driver. For the maps and places I
-                        decided to go with Apple's MapKit as I had already tried Google maps and places in my other projects.
+                        This project started as an experiment using Firebase. The idea was simple: create an uber clone with authentication and separate functionality for a passenger and a driver. For the maps and places I decided to go with Apple's MapKit as I had already tried
+                        Google maps and places in my other projects.
                     </p>
                     <p class="project-card__stack">Used stack:</p>
                     <ul class="tags">
@@ -236,45 +263,39 @@
                     </ul>
                     <a href="https://github.com/MaksBelenko/UberClone" class="project-card__link">Github: UberClone</a>
                 </div>
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="./images/UberClone.jpg" alt="project-img">
-                </div>
             </div>
 
-            <div class="row project-card" data-toggle="modal" data-target="#WorkReceipts"
-                data-portfolio-tag="iOS Apps">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="./images/Onboarding.jpg" alt="project-img">
-                </div>
+            <div class="row project-card" data-toggle="modal" data-target="#WorkReceipts" data-portfolio-tag="iOS Apps">
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">Onboarding for WorkReceipts App</h3>
                     <p class="project-card__description">
-                        This was created as a part of WorkReceipts app. The idea was to create custom Onboarding
-                        which is not similar to the mainstream ones: swipable card or similar. This onboarding
-                        points to the objects with appropriate description. Moreover, onboarding continues when the
-                        user adds its first receipt by showing a swipe functionality for the element in table view.
-                        In order to show them only single time 2 user defaults are used.
+                        This was created as a part of WorkReceipts app. The idea was to create custom Onboarding which is not similar to the mainstream ones: swipable card or similar. This onboarding points to the objects with appropriate description. Moreover, onboarding continues
+                        when the user adds its first receipt by showing a swipe functionality for the element in table view. In order to show them only single time 2 user defaults are used.
                     </p>
                     <p class="project-card__stack">Used stack:</p>
                     <ul class="tags">
                         <li>Swift</li>
                         <li>UserDefaults</li>
                     </ul>
-                    <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github: ReceiptsSorted</a>
+                    <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github:
+                        ReceiptsSorted</a>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="./images/Onboarding.jpg" alt="project-img">
                 </div>
             </div>
 
 
             <!-- C# Projects -->
-            <div class="row project-card" data-toggle="modal" data-target="#portfolioModal"
-                data-portfolio-tag="C# Projects">
+            <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="C# Projects">
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="images/Crossrail.jpg" alt="project-img">
+                </div>
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">C# Drivers for Crossrail</h3>
                     <p class="project-card__description">
-                        As my current position as a C# Developer at Siemens Mobility, I'm responsible for providing a CCTV, 
-                        Telephony and Intruder scanners information and functionality to the SCADA package. Thus, 
-                        enabling recordings and automatic switching, help points and intruder detection alarms. This 
-                        functionality is enabled for every single statition on Elizabeth line.
+                        As my current position as a C# Developer at Siemens Mobility, I'm responsible for providing a CCTV, Telephony and Intruder scanners information and functionality to the SCADA package. Thus, enabling recordings and automatic switching, help points and
+                        intruder detection alarms. This functionality is enabled for every single statition on Elizabeth line.
                     </p>
                     <p class="project-card__stack">Used stack:</p>
                     <ul class="tags">
@@ -285,24 +306,14 @@
                     </ul>
                     <a href="https://www.crossrail.co.uk/" class="project-card__link">www.crossrail.co.uk</a>
                 </div>
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="images/Crossrail.jpg" alt="project-img">
-                </div>
             </div>
 
-            <div class="row project-card" data-toggle="modal" data-target="#portfolioModal"
-                data-portfolio-tag="C# Projects">
-                <div class="col-md-6 col-lg-5 project-card__img">
-                    <img class="" src="images/Hololens.jpg" alt="project-img">
-                </div>
+            <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="C# Projects">
                 <div class="col-md-6 col-lg-7 project-card__info">
                     <h3 class="project-card__title">OPCUA with Hololens 2.0</h3>
                     <p class="project-card__description">
-                        After the release of Hololens 2.0 there was a great interest in the use of this technology within the automation 
-                        sector. This purpose of this project was to create a Unity model with OPCUA functionality. After I wrote 
-                        a C# driver for the OPCUA, the functionality was planned to be integrated into Unity/Hololens itself. 
-                        However, due to the limitations of Hololens I decided to use ASP.NET Core WebAPI and make hololens just 
-                        to make requests to it. 
+                        After the release of Hololens 2.0 there was a great interest in the use of this technology within the automation sector. This purpose of this project was to create a Unity model with OPCUA functionality. After I wrote a C# driver for the OPCUA, the functionality
+                        was planned to be integrated into Unity/Hololens itself. However, due to the limitations of Hololens I decided to use ASP.NET Core WebAPI and make hololens just to make requests to it.
                     </p>
                     <p class="project-card__stack">Used stack:</p>
                     <ul class="tags">
@@ -311,6 +322,9 @@
                         <li>WPF</li>
                         <li>C#</li>
                     </ul>
+                </div>
+                <div class="col-md-6 col-lg-5 project-card__img">
+                    <img class="" src="images/Hololens.jpg" alt="project-img">
                 </div>
             </div>
 
@@ -326,9 +340,7 @@
             <div class="col-md-10">
                 <h2 id="resume_header" class="section__title" style="text-indent: -9999px;">Resume_</h2>
                 <p class="section__description">
-                    Throughout my career I had a chance to work in different areas. I worked not
-                    only as an engineer and programmer but also as an analyst and a student ambassador.
-                    This section contains my employment history as well as education timeline.
+                    Throughout my career I had a chance to work in different areas. I worked not only as an engineer and programmer but also as an analyst and a student ambassador. This section contains my employment history as well as education timeline.
                 </p>
             </div>
         </div>
@@ -357,7 +369,7 @@
                 <!-- Into Manchester -->
                 <div class="resume-list__block">
                     <p class="resume-list__block-title">INTO Manchester</p>
-                    <p class="resume-list__block-date">Sep 2017 -  Aug 2019</p>
+                    <p class="resume-list__block-date">Sep 2017 - Aug 2019</p>
                     <p> Residential Ambassador </p>
                 </div>
 
@@ -365,8 +377,7 @@
                 <div class="resume-list__block">
                     <p class="resume-list__block-title">The University of Manchester</p>
                     <p class="resume-list__block-date">Jun 2017 - Sep 2017; Jun 2018 - Sep 2018</p>
-                    <p> Intern on 2 summer placements working on Digital Signal Processing using Fortran, OpenMP, MPI
-                        and Web </p>
+                    <p> Intern on 2 summer placements working on Digital Signal Processing using Fortran, OpenMP, MPI and Web </p>
                 </div>
 
                 <!-- SPBEC -->
@@ -448,6 +459,44 @@
 
 
     <!-- Portfolio Modal -->
+    <div class="modal fade portfolio-modal" id="EnergyFitness" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+                    <p class="portfolio-modal__title">Energy Fitness</p>
+                    <img class="portfolio-modal__img" src="images/Energy.png" alt="modal_img">
+                    <p class="portfolio-modal__description">
+                        Having to travel quite a bit for my work, I have to claim expenses every week. Monitoring all of these can be challenging as some receipts may get lost or forgotten to be claimed back. This is what led me to create this app. It allows you to quickly take
+                        a picture and track all receipts with the useful indicators. Furthermore, you can send all photos, Zip photos archive or PDF statement with the relative information, tables and photos. This app was designed with simplicity in mind.
+                        It intentionally was designed to have a very few view controllers meaning that they are responsible not only for one task.
+                    </p>
+                    <div class="portfolio-modal__link">
+                        <a href="https://github.com/MaksBelenko/energy-fitness-iOS" class="project-card__link">
+                            iOS Source Code |</a>
+                        <a href="https://github.com/MaksBelenko/gym-management-NestJs" class="project-card__link">
+                            NestJs Backend Source</a>
+                    </div>
+                    <div class="portfolio-modal__stack">
+                        <p class="portfolio-modal__stack-title">Using stack:</p>
+                        <ul class="tags">
+                            <li>Swift</li>
+                            <li>Combine</li>
+                            <li>NestJs</li>
+                            <li>AWS</li>
+                            <li>PostresQL</li>
+                            <li>S3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade portfolio-modal" id="WorkReceipts" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -460,17 +509,13 @@
                     <p class="portfolio-modal__title">WorkReceipts App</p>
                     <img class="portfolio-modal__img" src="images/WorkReceipts.jpg" alt="modal_img">
                     <p class="portfolio-modal__description">
-                        Having to travel quite a bit for my work, I have to claim expenses every week. Monitoring 
-                        all of these can be challenging as some receipts may get lost or forgotten
-                        to be claimed back. This is what led me to create this app. It allows you to quickly 
-                        take a picture and track all receipts
-                        with the useful indicators. Furthermore, you can send all photos, Zip photos archive or PDF
-                        statement with the relative information, tables and photos. This app was designed with simplicity 
-                        in mind. It intentionally was designed to have a very few view controllers meaning that they 
-                        are responsible not only for one task.
+                        Having to travel quite a bit for my work, I have to claim expenses every week. Monitoring all of these can be challenging as some receipts may get lost or forgotten to be claimed back. This is what led me to create this app. It allows you to quickly take
+                        a picture and track all receipts with the useful indicators. Furthermore, you can send all photos, Zip photos archive or PDF statement with the relative information, tables and photos. This app was designed with simplicity in mind.
+                        It intentionally was designed to have a very few view controllers meaning that they are responsible not only for one task.
                     </p>
                     <div class="portfolio-modal__link">
-                        <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github: ReceiptsSorted</a>
+                        <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github:
+                            ReceiptsSorted</a>
                     </div>
                     <div class="portfolio-modal__stack">
                         <p class="portfolio-modal__stack-title">Using stack:</p>
@@ -499,12 +544,12 @@
                     <p class="portfolio-modal__title">DeliVeri</p>
                     <img class="portfolio-modal__img" src="images/DeliVeri.jpg" alt="modal_img">
                     <p class="portfolio-modal__description">
-                        I came accross Vapor and decided to create a backend, front-end and an app using only Swift.
-                        This project is a simple ordering service. As a test hosting I decided to use my
+                        I came accross Vapor and decided to create a backend, front-end and an app using only Swift. This project is a simple ordering service. As a test hosting I decided to use my
                         <i>Raspberry Pi 4</i> with Ubuntu 18.04.4 since this OS is officially supported.
                     </p>
                     <div class="portfolio-modal__link">
-                        <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github: ReceiptsSorted</a>
+                        <a href="https://github.com/MaksBelenko/ReceiptsSorted" class="project-card__link">Github:
+                            ReceiptsSorted</a>
                     </div>
                     <div class="portfolio-modal__stack">
                         <p class="portfolio-modal__stack-title">Using stack:</p>
@@ -536,14 +581,12 @@
                     <p class="portfolio-modal__title">SimplePDFBuilder</p>
                     <img class="portfolio-modal__img" src="images/SimplePDFBuilder.jpg" alt="modal_img">
                     <p class="portfolio-modal__description">
-                        Working with PDF creation in other apps I decided it will be a great idea to create an
-                        open-source framework where creating custom PDF will be a matter of a few lines of code. This will allow people to
-                        spend time on more valuable things in their apps rather than having to draw squares pixel by pixel. This framework
-                        allows developers to create PDFs with highly customisable elements such as text, image, footers, headers and even
-                        flexible tables.
+                        Working with PDF creation in other apps I decided it will be a great idea to create an open-source framework where creating custom PDF will be a matter of a few lines of code. This will allow people to spend time on more valuable things in their apps
+                        rather than having to draw squares pixel by pixel. This framework allows developers to create PDFs with highly customisable elements such as text, image, footers, headers and even flexible tables.
                     </p>
                     <div class="portfolio-modal__link">
-                        <a href="https://github.com/MaksBelenko/SimplePDFBuilder" class="project-card__link">Github: SimplePDFBuilder</a>
+                        <a href="https://github.com/MaksBelenko/SimplePDFBuilder" class="project-card__link">Github:
+                            SimplePDFBuilder</a>
                     </div>
                     <div class="portfolio-modal__stack">
                         <p class="portfolio-modal__stack-title">Using stack:</p>
@@ -573,38 +616,39 @@
                     <p class="portfolio-modal__title">Uber Clone</p>
                     <img class="portfolio-modal__img" src="images/UberClone.jpg" alt="modal_img">
                     <p class="portfolio-modal__description">
-                        This project started as an experiment using Firebase. The idea was simple: create an uber clone
-                        with authentication and separate functionality for a passenger and a driver. For the maps and places I
-                        decided to go with Apple's MapKit as I had already tried Google maps and places in my other projects.
+                        This project started as an experiment using Firebase. The idea was simple: create an uber clone with authentication and separate functionality for a passenger and a driver. For the maps and places I decided to go with Apple's MapKit as I had already tried
+                        Google maps and places in my other projects.
                     </p>
                     <div class="portfolio-modal__link">
-                        <a href="https://github.com/MaksBelenko/UberClone" class="project-card__link">Github: UberClone</a>
-                    <div class="portfolio-modal__stack">
-                        <p class="portfolio-modal__stack-title">Using stack:</p>
-                        <ul class="tags">
-                            <li>Swift</li>
-                            <li>MapKit</li>
-                            <li>Firebase</li>
-                            <li>Authentification</li>
-                        </ul>
-                        </ul>
+                        <a href="https://github.com/MaksBelenko/UberClone" class="project-card__link">Github:
+                            UberClone</a>
+                        <div class="portfolio-modal__stack">
+                            <p class="portfolio-modal__stack-title">Using stack:</p>
+                            <ul class="tags">
+                                <li>Swift</li>
+                                <li>MapKit</li>
+                                <li>Firebase</li>
+                                <li>Authentification</li>
+                            </ul>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Portfolio Modal -->
+        <!-- Portfolio Modal -->
 
 
 
-    <script src="js/min/jquery.waypoints.min.js"></script>
-    <script src="js/min/mbclicker.min.js"></script>
+        <script src="js/min/jquery.waypoints.min.js"></script>
+        <script src="js/min/mbclicker.min.js"></script>
 
-    <script src="js/menu.js"></script>
-    <script src="js/section.js"></script>
-    <script src="js/portfolio-filter.js"></script>
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/site-btn.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/section.js"></script>
+        <script src="js/portfolio-filter.js"></script>
+        <script src="js/mobile-menu.js"></script>
+        <script src="js/site-btn.js"></script>
+        <script src="js/github-calendar.js"></script>
 
 </body>
 
